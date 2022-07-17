@@ -23,6 +23,7 @@ class init
         $dbname = "engine";
         $user = "root";
         $pass = "";
+
         try {
             # MySQL через PDO_MYSQL
             $connect = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
@@ -33,3 +34,4 @@ class init
         }
     }
 }
+
