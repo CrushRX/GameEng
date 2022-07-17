@@ -22,7 +22,15 @@ class baseModel {
     {
         $connection = $this->model($name);
         $sql = "SELECT * FROM `".$name."`";
-        $result = $connection->query($sql)->fetch();
+        $result = $connection->query($sql)->fetchAll();
+        return $result;
+    }
+
+    public function byRating($name)
+    {
+        $connection = $this->model($name);
+        $sql = "SELECT * FROM `".$name."` ORDER BY rating DESC";
+        $result = $connection->query($sql)->fetchAll();
         return $result;
     }
 }

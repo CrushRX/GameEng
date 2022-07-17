@@ -1,6 +1,7 @@
 <?php
 
-$user = new baseModel();
-$all_users = $user->all('settings');
+$model = new baseModel();
+$all_users = $model->all('settings');
+$games_by_rating = $model->byRating('games');
 
 include_once 'resources/view/home.php';

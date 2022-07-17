@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top-games-block {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-games-block > div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border: 2px solid silver;
+    border-radius: 10px 10px 90px 90px;
+    background-color: darkgoldenrod;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: italic;
+    color: moccasin;
+    text-decoration: auto;
+}
+
+.first-game {
+    padding: 50px !important;
+    border-radius: 10px 10px 100px 100px;
+
+}
+
+a {
+    text-decoration: auto;
+    color: floralwhite;
+}
+

@@ -1,7 +1,5 @@
 <?php
 
-namespace model;
-
 class User extends baseModel {
     public $table = 'users';
 

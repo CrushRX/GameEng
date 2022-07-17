@@ -7,7 +7,11 @@ class Route{
         if(file_exists($src))
         {
             require_once $src;
-        } else {
+        } else if ($route == "/")
+        {
+            require_once $url."/app/controllers/homeController.php";
+        }
+        else {
             require_once "$url/resources/view/404.php";
         }
         exit();
