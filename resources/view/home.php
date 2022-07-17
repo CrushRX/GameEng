@@ -28,7 +28,7 @@
                 Рейтинг: <?=$games_by_rating[1]['rating']?>
             </div>
             <div class="src">
-                <a href="">
+                <a href="/<?=$games_by_rating[1]['alias']?>">
                     Играть
                 </a>
             </div>
@@ -47,8 +47,8 @@
                 Рейтинг: <?=$games_by_rating[0]['rating']?>
             </div>
             <div class="src">
-                <a href="">
-                    Играть
+                <a href="/<?=$games_by_rating[0]['alias']?>">
+                Играть
                 </a>
             </div>
         </div>
@@ -66,7 +66,7 @@
                 Рейтинг: <?=$games_by_rating[2]['rating']?>
             </div>
             <div class="src">
-                <a href="">
+                <a href="/<?=$games_by_rating[2]['alias']?>">
                     Играть
                 </a>
             </div>
