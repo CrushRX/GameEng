@@ -3,7 +3,8 @@
 class Route{
     public static function drowPage($url, $route)
     {
-        $src = $url."/app/controllers".$route.'Controller.php';
+        $src = $url."/app/controllers".strtok($route, '?').'Controller.php';
+
         if(file_exists($src))
         {
             require_once $src;
