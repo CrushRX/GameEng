@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="resources/css/layouts.css">
 </head>
 <body>
+
     <?include_once "layouts/header.php"?>
+
+    <div class="container">
+
     <?include_once "layouts/topUsers.php"?>
 
     <div class="top-games-block">
@@ -72,7 +76,9 @@
             </div>
         </div>
     </div>
+</div>
 
     <?include_once "layouts/footer.php"?>
+
 </body>
 </html>

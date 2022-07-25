@@ -17,13 +17,13 @@ if (\controller\BaseControler::request() === 'POST') {
     if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
         header('Content-Type: application/json; charset=utf-8');
         http_response_code(400);
-        return (json_encode(['status' => 'error', 'data' => ['name' => 'Only letters and white space allowed']]));
+        return (json_encode(['status' => 'error','code'=>1, 'data' => ['name' => 'Only letters and white space allowed']]));
     }
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header('Content-Type: application/json; charset=utf-8');
-        http_response_code(400);
-        return (json_encode(['status' => 'error', 'data' => ['email' => 'not valid email']]));
+        http_response_code(401);
+        return (json_encode(['status' => 'error','code'=>2, 'data' => ['email' => 'not valid email']]));
     }
 
     $dat = ['username' => $name, 'password' => $passwd, 'email' => $email];

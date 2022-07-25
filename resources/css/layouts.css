@@ -1,0 +1,33 @@
+.container {
+    margin: 0 100px;
+}
+
+header {
+    height: 100px;
+    background: aliceblue;
+}
+
+.height-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    text-decoration: none;
+}
+
+li {
+    list-style:none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li > a {
+    color: darkred;
+}
+
+.height-block div {
+    width: 33%;
+}

@@ -16,7 +16,6 @@ $route = new BaseControler();
 
 $route::redirect(basicFunction::url(),$route->getRoute());
 
-exit();
 try {
     if($settings->rowCount() == null)
         throw new Exception();

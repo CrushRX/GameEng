@@ -34,7 +34,7 @@
             <div class="error">
                 this is error
             </div>
-            <input type="submit" class="sbmt" onclick="event.preventDefault()">
+            <input type="submit" class="sbmt">
         </form>
     </div>
 </body>
