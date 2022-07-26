@@ -63,7 +63,6 @@
                 let data = JSON.parse(result);
                 if (data.status == true)
                 {
-                    document.cookie = "user="+data.data.username;
                     document.cookie = "token="+data.data.token;
                     location="/";
                 } else {

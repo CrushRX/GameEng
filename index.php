@@ -13,6 +13,7 @@ use init\init;
 $connect = Init::checkDB();
 $settings = $connect->query('SELECT * FROM `settings`');
 $route = new BaseControler();
+Validator::checkUser();
 
 $route::redirect(basicFunction::url(),$route->getRoute());
 

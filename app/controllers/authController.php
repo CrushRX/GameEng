@@ -4,8 +4,7 @@ use controller\BaseControler;
 
 $model = new baseModel();
 
-//if(isset($_COOKIE['user']))
-//    header('Location: '. '/');
-
+if(Validator::getUserCheck())
+    header('Location: '. '/');
 
 include_once 'resources/view/auth.php';

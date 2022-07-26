@@ -1,5 +1,6 @@
 .container {
     margin: 0 100px;
+    height: 100%;
 }
 
 header {
@@ -13,6 +14,8 @@ header {
     justify-content: space-around;
     text-align: center;
     text-decoration: none;
+    align-items: center;
+    height: 100%;
 }
 
 li {

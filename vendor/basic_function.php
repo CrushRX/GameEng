@@ -8,7 +8,7 @@ class basicFunction
     }
 
     public static function gen_token() {
-        $token = sprintf(
+        $token = time().sprintf(
             '%04x%04x%04x%04x%04x%04x%04x%04x',
             mt_rand(0, 0xffff),
             mt_rand(0, 0xffff),
