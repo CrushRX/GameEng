@@ -41,3 +41,34 @@ li > a {
     align-items: center;
     width: 100% !important;
 }
+
+.banner-block {
+    height: 140px;
+    padding: 40px;
+    display: flex;
+    flex-display: row;;
+}
+
+.banner-left {
+    width: 49%;
+}
+
+.banner-home {
+    width: 70%;
+}
+
+.banner-right {
+    width: 49%;
+    padding: 0 60px;
+}
+
+.banner-right img {
+    height: 150px;
+    width: 100%;
+    background-color: moccasin;
+}
+
+.nonauth {
+    justify-content: space-around;
+    background-color: moccasin;
+}
